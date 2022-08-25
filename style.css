@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    min-height: 75px;
+    background-color: greenyellow;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    font-weight:bolder;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+    
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: red;
+    text-decoration:underline;
+}
+
+/*de aqui en adelante se sigue con la parte
+mobile
+IMPORTANTE: HACER PRIMERO SIEMPRE LA PARTE MOBILE */
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+       
+        
+    }
+    nav{
+        padding: 10px 0px;
+        
+    }
+
+
+}
